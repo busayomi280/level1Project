@@ -1,0 +1,122 @@
+body{
+    background-color: #F9FAFE;
+}
+.blue-heading{
+    margin-top: 105px;
+    background-color: #0069FF;
+    padding: 12px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blue-heading h1{
+    color: white;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+.blue-heading i{
+    color: white;
+    font-size: 1em;
+}
+main{
+    margin-top: 30px;
+    display: grid;
+    grid-template-areas: 
+        "sidebar" "main"
+        "footer" "footer"
+    ;
+    grid-template-columns: 1fr 7fr;
+}
+.sidebar{
+    /* position: sticky;
+    overflow-y: auto; */
+    grid-area: sidebar;
+    border-right: 1px solid #182746c8;
+    /* height: 100vh; */
+    padding: 0 45px;
+    text-align: center;
+}
+.expand .img-1{
+    width: 20px;
+    color: #182746c8;
+}
+.expand .img-2{
+    margin-top: -58px;
+    width: 60px;
+}
+.expand p{
+    font-weight: 600;
+    font-size: .9em;
+}
+.sidebar-icons{
+    padding-left: 30px;
+    margin-top: -60px;
+}
+.sidebar-icons i{
+    display: block;
+    font-size: 1.3em;
+    padding: 12px;
+}
+.sidebar-icons i:hover{
+    color: white;
+    /* background-color: #E3E8F4; */
+    /* border-radius: 50%; */
+}
+.sidebar-icons img{
+    display: block;
+    padding: 12px;
+}
+.sidebar-icons img:hover{
+    background-color: #E3E8F4;
+}
+.main{
+    /* grid-area: main;*/
+    overflow-y: auto;
+    padding-left: 30px;
+    padding-right: 70px;
+}
+.main h1{
+    font-size: 1.4em;
+    font-weight: 600;
+}
+.main p{
+    font-size: .9em;
+    padding: 10px 0;
+}
+.main strong{
+    font-weight: bold;
+}
+.main h3{
+    padding: 20px 0;
+    font-weight: bold;
+    font-size: 1em;
+}
+.droplet-type{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+}
+.droplet-type-items{
+    border: 1px solid #182746c8;
+    border-radius: 15px;
+    padding: 25px;
+}
+.droplet-type-items:hover{
+    background-color: #1433D6;
+
+}
+.droplet-type-items p{
+    line-height: 1.5;
+}
+.droplet-type-items p:hover{
+    color: white;
+}
+
+.droplet-type-name{
+    display: inline;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+.choose-cpu{
+    padding: 30px 0 ;
+}

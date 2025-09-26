@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Calculator</title>
+    <link rel="shortcut icon" href="../images/do-logo-only.png" type="image/x-icon">
+    <link rel="stylesheet" href="../landingpage.css">
+    <link rel="stylesheet" href="../othercsspages/price-calculator.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+     <header>
+      <div class="banner">
+        <p>
+          Deploy is coming to London on October 2nd 2025. Register now
+          <i class="fa-solid fa-arrow-right"></i>
+        </p>
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Docs</a></li>
+          <li><a href="#">Get Support</a></li>
+          <li><a href="#">Contact Sales</a></li>
+        </ul>
+      </div>
+      <nav>
+        <div class="logo">
+          <img src="../images/do-logo.png" alt="" />
+        </div>
+        <ul class="nav-links">
+          <li class="products">
+            <a href="#">Products <i class="fa-solid fa-chevron-down"></i></a>
+          </li>
+          <li>
+            <a href="#">Solutions <i class="fa-solid fa-chevron-down"></i></a>
+          </li>
+          <li>
+            <a href="#">Developers <i class="fa-solid fa-chevron-down"></i></a>
+          </li>
+          <li>
+            <a href="#">Partners <i class="fa-solid fa-chevron-down"></i></a>
+          </li>
+          <li><a href="#">Pricing</a></li>
+        </ul>
+        <div class="auth-buttons">
+          <button class="login">Log In</button>
+          <button class="signup">Sign Up</button>
+        </div>
+      </nav>
+    </header>
+    <div class="blue-heading">
+        <h1>Price estimate calculator</h1>
+        <i class="fa-solid fa-shopping-cart"></i>
+    </div>
+    <main>
+        <div class="sidebar">
+            <div class="expand">            
+                <img class="img-1" src="../images/exxpand.svg" alt="">
+                <p>expand</p>
+                <img class="img-2" src="../images/expand.svg" alt="">
+            </div>
+            <div class="sidebar-icons">           
+                <div class="icon1">
+                    <i class="fa-solid fa-desktop"></i>
+                    <!-- <span>Compute</span> -->
+                </div>
+                <i class="fa-solid fa-database"></i>
+                <!-- <span>Databases</span> -->
+                <i class="fa-solid fa-globe"></i>
+                <!-- <span>Networking</span> -->
+                <img src="../images/storage.svg" alt="">
+                <!-- <span>Storage</span> -->
+                <img src="../images/developer tools.svg" alt="">
+                <!-- <span>Developers Tools</span> -->
+            </div>
+        </div>
+        <div class="main">
+            <h1>Virtual Machine (Droplet)</h1>
+            <p>
+                <strong>Directions:</strong> Select the specs you'd like to include with your virtual machine (select all that apply). Not sure how to <br> get started or have questions about pricing? <a href="#">Contact our sales team</a>  
+            </p>
+            <h3>Choose your type of Droplet</h3>
+            <div class="droplet-type">
+                <div class="droplet-type-items">
+                    <div class="upper-part">
+                        <input type="radio" name="basic">
+                        <p class="droplet-type-name">Basic</p>
+                    </div>
+                    <p>Shared CPU, ideal for low traffic web servers, blogs, <br> CMS, discussion forums, small databases, apps, <br> Repository hosting and microservices</p>
+                </div>
+                 <div class="droplet-type-items">
+                    <div class="upper-part">
+                        <input type="radio" name="basic">
+                        <p class="droplet-type-name">General Purpose</p>
+                    </div>
+                    <p>Dedicated CPU, ideal for medium-to-high-traffic <br> web servers, e-commerce sites, medium-sized <br> databases and enterprise Software as a <br>Service(SaaS).</p>
+                </div>
+                 <div class="droplet-type-items">
+                    <div class="upper-part">
+                        <input type="radio" name="basic">
+                        <p class="droplet-type-name">CPU-Optimized</p>
+                    </div>
+                    <p>Dedicated CPU, ideal for media streaming, data <br> analytics, machine learning, ad serving, and batch <br> processing.</p>
+                </div>
+                 <div class="droplet-type-items">
+                    <div class="upper-part">
+                        <input type="radio" name="basic">
+                        <p class="droplet-type-name">Memory Optimized</p>
+                    </div>
+                    <p>Dedicated CPU, ideal for high-performance SQL or <br> NoSQL databases, web scale in-memory caches <br> and indexes, real-time big data processing</p>
+                </div>
+                 <div class="droplet-type-items">
+                    <div class="upper-part">
+                        <input type="radio" name="basic">
+                        <p class="droplet-type-name">Storage Optimized</p>
+                    </div>
+                    <p>Dedicated CPU, ideal for large, high-performance <br> NoSQL databases (MongoDB, Elasticsearch, <br> TimeScaleDB), monitoring and analytics software</p>
+                </div>
+
+            </div>
+
+            <!-- <div class="choose-cpu">
+            <h3>Choose a CPU option</h3>
+            <div class="droplet-type">
+                <div class="droplet-type-items" style="padding: 15px;">
+                    <div class="upper-part">
+                        <input type="radio" name="basic">
+                        <p class="droplet-type-name">Regular CPU</p>
+                    </div>
+                    <p>with SSD</p>
+                </div>
+                 <div class="droplet-type-items" style="padding: 15px;">
+                    <div class="upper-part">
+                        <input type="radio" name="basic">
+                        <p class="droplet-type-name">Premium Intel CPU</p>
+                    </div>
+                    <p>with NVMe SSD</p>
+                </div>
+
+            </div>
+
+            </div>
+             <div class="choose-cpu" style="padding-top: 0;">
+            <h3>Choose an SSD variant</h3>
+            <div class="droplet-type">
+                <div class="droplet-type-items" style="padding: 15px;">
+                    <div class="upper-part">
+                        <input type="radio" name="basic">
+                        <p class="droplet-type-name">x SSD</p>
+                    </div>
+                </div>
+                 <div class="droplet-type-items" style="padding: 15px;">
+                    <div class="upper-part">
+                        <input type="radio" name="basic">
+                        <p class="droplet-type-name">1.5x SSD
+</p>
+                    </div>
+                </div>
+
+            </div>
+
+            </div> -->
+        </div>
+      
+    </main>
+</body>
+</html>
+<!-- <i class="fa-solid fa-desktop"></i>
+ <i class="fa-solid fa-database"></i>
+ <i class="fa-solid fa-globe"></i>
+ <i class="fa-solid fa-code"></i> -->

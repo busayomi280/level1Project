@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.hero{
+    background-image: url(../images/d-hero-image.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 120px;
+}
+.hero h3{
+    font-weight: 800;
+    font-size: 2.5em;
+    color: white;
+}
+.hero p{
+    color: #ffffffdd;
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 1.3;   
+    padding: 30px  170px;
+}
+.hero button{
+    padding: 18px 30px;
+    border-radius: 35px;
+    background: transparent;
+    border: 1px solid white;
+    color: #ffffffe7;
+    font-size: 1em;
+}
+.hero button:hover{
+    color: #ffffff;
+}
+.cloudways{
+    text-align: center;
+    padding: 100px 0;
+}
+.cloudways h1{
+    font-weight: bold;
+    color: #000000c8;
+    font-size: 2.5em;
+}
+.cloudways p{
+    padding: 0 200px;
+    line-height: 1.5;
+}
+.cloudways button{
+    border: none;
+    border-radius: 30px;
+    background-color: #0069FF;
+    padding: 20px 35px;
+    font-size: 1em;
+    color: white;
+    font-weight: 600;
+}
+.hosting{
+    background-color: #F9FAFE;
+    padding: 50px 70px;
+    text-align: center;
+}
+p{
+    color: #393939d8;
+}
+.hosting h1{
+     font-weight: bold;
+    color: #000000c8;
+    font-size: 2.3em;
+}
+.hosting-cards{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+.hosting-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    text-align: start;
+    padding: 30px 50px ;
+    border-radius: 30px;
+    /* width: 270px;
+    height: 450px; */
+}
+.hosting-card h3{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #3b3a3a;
+}
+.hosting-card p{
+    line-height: 1.7;
+    padding: 20px 0;
+}
+.managed-hosting{
+    background-image: url(../images/product-overview.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-bottom: 100px;
+    padding-top: 60px;
+    color: white;
+}
+.managed-hosting h1{
+    font-weight: bold;
+    font-size: 2.5em;
+    color: white;
+}
+.managed-hosting p{
+    color: white;
+    padding: 40px 320px;
+    text-align: left;
+}
+.managed-hosting a{
+    padding: 20px 30px;
+    border-radius: 30px;
+    background-color: white;
+    color: #0069FF;
+    font-weight: bold;
+}
+.managed-hosting a:hover{
+    background-color: #dedede;
+}
+.do{
+    text-align: center;
+    padding: 30px 0;
+}
+ h1{
+    font-weight: bold;
+    font-size: 2.5em;
+    color: #000000c8;
+    padding-bottom: 20px;
+}
+.do button{
+    border: none;
+    padding: 20px 30px;
+    border-radius: 30px;
+    color: white;
+    font-size: 1em;
+    background-color: #0069FF;
+    font-weight: bold;
+}
+.faq{
+    padding: 100px 300px;
+}
+.faq h1{
+    font-weight: bold;
+    text-align: center;
+}
+.questions{
+    font-weight: bold;
+    color: black;
+}
+.faq p{
+    padding-bottom: 25px;
+    line-height: 1.3;
+}
+.ans a{
+    text-decoration: underline;
+}
+.ans a:hover{
+    background-color: #0069FF;
+}
+.fa-bars{
+    display: none;
+}
+.mobile-logo{
+    display: none;
+    visibility: hidden;
+}
+@media (max-width: 1024px) {
+    .hosting{
+        padding: 40px 0px;
+    }
+    .hosting-cards{
+        display: block;
+    }
+    .hosting-card{
+        margin-bottom: 30px;
+    }
+    .cloudways{
+        padding: 80px;
+    }
+   .managed-hosting p{
+    padding: 10px 60px;
+    padding-bottom: 50px;
+   }
+    .faq{
+    padding: 100px ;
+    text-align: center;
+    }
+}
+@media (max-width: 860px) {
+    nav{
+        padding: 13px 70px;
+    }
+    .hero p{
+        padding: 30px 100px;
+    }
+    .cloudways p{
+        padding: 0 120px;
+    }
+    .cloudways h1{
+        font-size: 1.8em;
+    }
+}
+@media (max-width: 775px) {
+    .hero{
+        margin-top: 0;
+        padding: 120px 30px;
+    }
+    .hero h3{
+    font-weight: 800;
+    font-size: 2.2em;
+    }
+    .hero p{
+    /* color: #ffffffdd; */
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 1.3;   
+    padding: 30px 0;
+    }
+    
+}
+@media (max-width: 660px) {
+    .hosting h1{
+        font-size: 1em;
+        /* padding: 8px; */
+    }
+    .cloudways p{
+        padding: 0 70px;
+    }
+}
+@media (max-width: 450px) {
+    nav{
+        padding: 0;
+    }
+    nav .logo img{
+        display: none;
+    }
+    .mobile-logo{
+        display: inline;
+        visibility: visible;
+        margin-left: -280px;
+        width: 80px;
+    }
+    .hero{
+        margin-top: 20px;
+    }
+    .hero button{
+        padding: 15px;
+    }
+    .fa-bars{
+        font-size: 1em;
+    }
+    .cloudways p{
+        padding: 0 20px;
+        text-align: center;
+    }
+    
+}
+@media (max-width: 376px) {
+    .hero{
+        margin-top: 20px;
+        padding: 60px;
+    }
+    .hero h3{
+        font-weight: 600;
+    }
+    .hero p{
+        font-weight: 400;
+    }
+   .mobile-logo{
+        margin-left: -160px;
+        width: 60px;
+   } 
+   .cloudways{
+    text-align: center;
+    padding: 20px;
+   }
+   .cloudways h1{
+        text-align: center;
+        font-size: 1.8em;
+   }
+   .cloudways button{
+    padding: 10px 20px;
+   }
+   .managed-hosting h1{
+    font-size: 1.5em;
+    }
+    .managed-hosting p{
+        text-align: center;
+        padding:  20px;
+        padding-bottom: 50px;
+    }
+    .managed-hosting a{
+        padding: 10px 30px;
+        font-size: .9em;
+    }
+    .do h1{
+        font-size: 1.4em;
+    }
+    .do button{
+        padding: 15px 10px;
+        font-size: .8em;
+    }
+    .faq{
+    padding: 100px 20px;
+    }
+    .faq h1{
+        font-weight: bold;
+        text-align: center;
+    }
+    .faq p{
+        padding-bottom: 25px;
+        line-height: 1.3;
+    }
+}
+
+
