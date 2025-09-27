@@ -55,19 +55,24 @@ main{
 .sidebar-icons i{
     display: block;
     font-size: 1.3em;
-    padding: 12px;
+    padding: 12px ;
 }
-.sidebar-icons i:hover{
+.sidebar-icons div{
+    /* padding: 12px 12px; */
+    text-align: center;
+    border-radius: 50%;
+  }
+.sidebar-icons div:hover{
     color: white;
-    /* background-color: #E3E8F4; */
-    /* border-radius: 50%; */
+    background-color: #0069FF;
 }
 .sidebar-icons img{
     display: block;
     padding: 12px;
 }
 .sidebar-icons img:hover{
-    background-color: #E3E8F4;
+    background-color: #0069FF;
+    border-radius: 50%;
 }
 .main{
     /* grid-area: main;*/
@@ -82,6 +87,14 @@ main{
 .main p{
     font-size: .9em;
     padding: 10px 0;
+    line-height: 1.3;
+}
+.main p a{
+    color: #0069FF;
+    text-decoration: underline;
+}
+.vmp{
+    width: 64%;
 }
 .main strong{
     font-weight: bold;
@@ -97,20 +110,20 @@ main{
     gap: 1em;
 }
 .droplet-type-items{
-    border: 1px solid #182746c8;
+    border: 2px solid #bbb9b992;
     border-radius: 15px;
     padding: 25px;
 }
 .droplet-type-items:hover{
     background-color: #1433D6;
-
+    color: white;
 }
 .droplet-type-items p{
     line-height: 1.5;
 }
 .droplet-type-items p:hover{
     color: white;
-}
+}   
 
 .droplet-type-name{
     display: inline;
@@ -119,4 +132,91 @@ main{
 }
 .choose-cpu{
     padding: 30px 0 ;
+}
+.virtual-machine{
+    display: none;
+}
+.mobile-logo{
+    display: none;
+}
+@media (max-width: 1024px) {
+       .blue-heading{
+         margin-top: 120px;
+       } 
+       .nav-links li a{
+        padding: 10px ;
+        font-size: .9em;
+    }
+}
+@media (max-width:927px) {
+    .nav-links{
+        display: none;
+    }
+}
+@media (max-width: 766px) {
+    .login, .signup, .banner{
+        display: none;
+    }
+    .blue-heading{
+        margin-top: 70px;
+        padding: 12px 20px;
+    }
+    .blue-heading h1{
+        display: none;
+    }
+    .virtual-machine{
+        display: flex;
+        width: 93%;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 7px;
+        padding: 10px;
+        font-size: .8em;
+    }
+    .virtual-machine i{
+        color: black;
+    }
+    main{
+        display: block;
+    }
+    .sidebar{
+        display: none;
+    }
+    .droplet-type{
+        display: block;
+    }
+    .droplet-type-items{
+        margin-bottom: 20px;
+    }
+    .droplet-type-items-p{
+        display: none;
+    }
+    .vmp{
+        width: 100%;
+    }
+}
+@media (max-width:450px) {
+    nav .logo img{
+        display: none;
+    }
+    nav{
+        padding: 0;
+    }
+    .blue-heading{
+        margin-top: 60px;
+    }
+    .mobile-logo{
+        display: inline;
+        margin-left: -260px;
+        width: 60px;
+    }
+    .virtual-machine{
+        width: 85%;
+    }
+}
+@media (max-width:380px) {
+    .mobile-logo{
+        display: inline;
+        margin-left: -240px;
+    }
 }

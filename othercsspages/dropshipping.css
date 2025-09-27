@@ -127,6 +127,7 @@ p{
     background-color: white;
     color: #0069FF;
     font-weight: bold;
+    text-decoration: none;
 }
 .managed-hosting a:hover{
     background-color: #dedede;
@@ -176,7 +177,6 @@ p{
 }
 .mobile-logo{
     display: none;
-    visibility: hidden;
 }
 @media (max-width: 1024px) {
     .hosting{
@@ -198,6 +198,9 @@ p{
     .faq{
     padding: 100px ;
     text-align: center;
+    }
+    .nav-links{
+        display: none;
     }
 }
 @media (max-width: 860px) {
@@ -243,7 +246,7 @@ p{
 }
 @media (max-width: 450px) {
     nav{
-        padding: 0;
+        padding:0 10px;
     }
     nav .logo img{
         display: none;
@@ -251,7 +254,7 @@ p{
     .mobile-logo{
         display: inline;
         visibility: visible;
-        margin-left: -280px;
+        margin-left: -260px;
         width: 80px;
     }
     .hero{
@@ -266,6 +269,15 @@ p{
     .cloudways p{
         padding: 0 20px;
         text-align: center;
+    }
+    .managed-hosting a{
+        padding: 10px 30px;
+        font-size: .9em;
+        
+    }
+    .do button{
+        padding: 15px ;
+        font-size: .9em;
     }
     
 }
@@ -306,6 +318,7 @@ p{
     .managed-hosting a{
         padding: 10px 30px;
         font-size: .9em;
+        
     }
     .do h1{
         font-size: 1.4em;

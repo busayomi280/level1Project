@@ -33,6 +33,7 @@
         <div class="logo">
           <img src="../images/do-logo.png" alt="" />
         </div>
+        <img class="mobile-logo" src="../images/digitalocean-logo.png" alt="">
         <ul class="nav-links">
           <li class="products">
             <a href="#">Products <i class="fa-solid fa-chevron-down"></i></a>
@@ -51,13 +52,19 @@
         <div class="auth-buttons">
           <button class="login">Log In</button>
           <button class="signup">Sign Up</button>
+             <i class="fa-solid fa-bars"></i>
         </div>
       </nav>
     </header>
     <div class="blue-heading">
         <h1>Price estimate calculator</h1>
+        <div class="virtual-machine">
+            <p>Virtual Machine (Droplet)</p>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
         <i class="fa-solid fa-shopping-cart"></i>
     </div>
+    
     <main>
         <div class="sidebar">
             <div class="expand">            
@@ -70,9 +77,13 @@
                     <i class="fa-solid fa-desktop"></i>
                     <!-- <span>Compute</span> -->
                 </div>
-                <i class="fa-solid fa-database"></i>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                </div>
                 <!-- <span>Databases</span> -->
-                <i class="fa-solid fa-globe"></i>
+                <div>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
                 <!-- <span>Networking</span> -->
                 <img src="../images/storage.svg" alt="">
                 <!-- <span>Storage</span> -->
@@ -82,8 +93,8 @@
         </div>
         <div class="main">
             <h1>Virtual Machine (Droplet)</h1>
-            <p>
-                <strong>Directions:</strong> Select the specs you'd like to include with your virtual machine (select all that apply). Not sure how to <br> get started or have questions about pricing? <a href="#">Contact our sales team</a>  
+            <p class="vmp">
+                <strong>Directions:</strong> Select the specs you'd like to include with your virtual machine (select all that apply). Not sure how to  get started or have questions about pricing? <a href="#">Contact our sales team</a>  
             </p>
             <h3>Choose your type of Droplet</h3>
             <div class="droplet-type">
@@ -92,35 +103,35 @@
                         <input type="radio" name="basic">
                         <p class="droplet-type-name">Basic</p>
                     </div>
-                    <p>Shared CPU, ideal for low traffic web servers, blogs, <br> CMS, discussion forums, small databases, apps, <br> Repository hosting and microservices</p>
+                    <p class="droplet-type-items-p">Shared CPU, ideal for low traffic web servers, blogs, CMS, discussion forums, small databases, apps,  Repository hosting and microservices</p>
                 </div>
                  <div class="droplet-type-items">
                     <div class="upper-part">
                         <input type="radio" name="basic">
                         <p class="droplet-type-name">General Purpose</p>
                     </div>
-                    <p>Dedicated CPU, ideal for medium-to-high-traffic <br> web servers, e-commerce sites, medium-sized <br> databases and enterprise Software as a <br>Service(SaaS).</p>
+                    <p class="droplet-type-items-p">Dedicated CPU, ideal for medium-to-high-traffic  web servers, e-commerce sites, medium-sized databases and enterprise Software as a Service(SaaS).</p>
                 </div>
                  <div class="droplet-type-items">
                     <div class="upper-part">
                         <input type="radio" name="basic">
                         <p class="droplet-type-name">CPU-Optimized</p>
                     </div>
-                    <p>Dedicated CPU, ideal for media streaming, data <br> analytics, machine learning, ad serving, and batch <br> processing.</p>
+                    <p class="droplet-type-items-p">Dedicated CPU, ideal for media streaming, data  analytics, machine learning, ad serving, and batch processing.</p>
                 </div>
                  <div class="droplet-type-items">
                     <div class="upper-part">
                         <input type="radio" name="basic">
                         <p class="droplet-type-name">Memory Optimized</p>
                     </div>
-                    <p>Dedicated CPU, ideal for high-performance SQL or <br> NoSQL databases, web scale in-memory caches <br> and indexes, real-time big data processing</p>
+                    <p class="droplet-type-items-p">Dedicated CPU, ideal for high-performance SQL or  NoSQL databases, web scale in-memory caches  and indexes, real-time big data processing</p>
                 </div>
                  <div class="droplet-type-items">
                     <div class="upper-part">
                         <input type="radio" name="basic">
                         <p class="droplet-type-name">Storage Optimized</p>
                     </div>
-                    <p>Dedicated CPU, ideal for large, high-performance <br> NoSQL databases (MongoDB, Elasticsearch, <br> TimeScaleDB), monitoring and analytics software</p>
+                    <p class="droplet-type-items-p">Dedicated CPU, ideal for large, high-performance  NoSQL databases (MongoDB, Elasticsearch, TimeScaleDB), monitoring and analytics software</p>
                 </div>
 
             </div>
@@ -167,7 +178,7 @@
 
             </div> -->
         </div>
-      
+     
     </main>
 </body>
 </html>
