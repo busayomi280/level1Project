@@ -665,6 +665,10 @@ footer{
     font-weight: 600;
     font-size: .9em;
 }
+.footer-content ul li a{
+    text-decoration: none;
+    color: #515254;
+}
 .footer-bottom{
     padding-top: 60px;
     display: flex;
