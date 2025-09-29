@@ -238,9 +238,9 @@ a{
         grid-template-columns: 1fr;
     }
 }
-@media (max-width:380px) {
+@media (max-width:400px) {
      .search input{
-        width: 300px;
+        width: 290px;
     }
 }
 @media (max-width:330px) {

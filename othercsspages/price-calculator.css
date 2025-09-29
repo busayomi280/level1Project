@@ -2,7 +2,7 @@ body{
     background-color: #F9FAFE;
 }
 .blue-heading{
-    margin-top: 105px;
+    margin-top: 95px;
     background-color: #0069FF;
     padding: 12px 80px;
     display: flex;
@@ -195,6 +195,13 @@ main{
         width: 100%;
     }
 }
+@media (max-width: 700px) {
+    .mobile-logo{
+        display: inline;
+        /* margin-left: -260px; */
+        width: 60px;
+    }
+}
 @media (max-width:450px) {
     nav .logo img{
         display: none;
@@ -207,7 +214,7 @@ main{
     }
     .mobile-logo{
         display: inline;
-        margin-left: -260px;
+        /* margin-left: -260px; */
         width: 60px;
     }
     .virtual-machine{
@@ -217,6 +224,6 @@ main{
 @media (max-width:380px) {
     .mobile-logo{
         display: inline;
-        margin-left: -240px;
+        /* margin-left: -240px; */
     }
 }
