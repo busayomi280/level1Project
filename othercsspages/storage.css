@@ -381,15 +381,43 @@ main{
     .main{
         padding: 30px 15px;
     }
-
     .storage-left p{
         font-size: .7em;
     }
-    .storage-card-items{
-        width: 400px;
-        height: 230px;
-    }
+    /* .storage-card-items{
+        width: 60%;
+        height: fit-content;
+    } */
     .thumbs{
          padding: 5px 10px;
+    }
+}
+@media (max-width: 392px) {
+    header{
+        padding: 20px;
+    }
+    .storage{
+        flex-direction: column-reverse;
+    }
+    .storage-left{
+        margin-left: 250px;
+    }
+    .storage-right h1{
+        font-size: 2em;
+    }
+    .storage-right span{
+        font-size: .8em;
+    }
+    .store-text{
+        font-size: .9em;
+    }
+    .mobile-menu{
+        font-size: 1.1em;
+    }
+     .left-header img{
+        width: 140px;
+    }
+    .docs{
+        font-size: 1.1em;
     }
 }

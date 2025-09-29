@@ -49,6 +49,7 @@ nav{
     align-items: center;
     padding: 15px 100px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;
 }
 .logo img{
     width: 200px;
@@ -97,14 +98,21 @@ nav{
     transition: all 0.3s ease;
 }
 .products-dropdown{
-    margin-top: 130px;
-    padding: 15px 100px;
+    position: absolute;
+    padding: 25px 100px;
+    top: 72px;
+    left: -60px;
     display: flex;
     gap: 5em;
+    background-color: white;
+    width: 1000%;
+    height: 90vh;
+    overflow-y: visible;
+    z-index: 999;
     display: none;
 }
 .products:hover .products-dropdown{
-    display: block;
+    display: flex;
 }
 .pd1{
     background-color: #F9FAFE;
@@ -150,12 +158,22 @@ nav{
     font-weight: 500;
 }
 .solutions-dropdown{
-    margin-top: 130px;
-    padding: 15px 100px;
+    position: absolute;
+    padding: 25px 100px;
+    top: 72px;
+    left: -60px;
+    background-color: white;
+    width: 1000%;
+    height: 90vh;
+    overflow-y: visible;
+    z-index: 999;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2em;
     display: none;
+}
+.solutions:hover .solutions-dropdown{
+    display: flex;
 }
 .sdp-normal-text{
     padding: 16px 0;
@@ -188,22 +206,42 @@ nav{
     border-radius: 12px;
 }
 .developers-dropdown{
-    margin-top: 130px;
-    padding: 15px 100px;
+    position: absolute;
+    padding: 25px 100px;
+    top: 72px;
+    left: -60px;
+    background-color: white;
+    width: 1000%;
+    height: 90vh;
+    overflow-y: visible;
+    z-index: 999;    
     display: flex;
     gap: 4em;
     display: none;
+}
+.developers:hover .developers-dropdown{
+    display: flex;
 }
 .dd-grid-gap{
     margin-top: 50px;
     gap: 5em;
 }
 .partners-dropdown{
-    margin-top: 130px;
-    padding: 15px 100px;
+    position: absolute;
+    padding: 25px 100px;
+    top: 72px;
+    left: -60px;
+    background-color: white;
+    width: 1000%;
+    height: 90vh;
+    overflow-y: visible;
+    z-index: 999;
     display: flex;
     gap: 1em;
     display: none;
+}
+.partners:hover .partners-dropdown{
+    display: flex;
 }
 .partners p{
     height: 60px;
@@ -295,22 +333,26 @@ nav{
     width: 800px;
     border-radius: 26px;
  }
-marquee{
-    /* animation: marquee 10s infinite linear; */
-    overflow-x: hidden;
+ .marquee-wrapper{
     width: 80%;
     margin: auto;
+    overflow: hidden;
+ }
+.marquee{
+    animation: marquee 14s infinite linear;
+    overflow-x: hidden;
+   width: max-content;
 }
-marquee img{
+.marquee img{
     width: 150px;
     margin-left: 30px;
 }
 @keyframes marquee {
     0%{
-        transform: translateX(40%);
+        transform: translateX(0);
     }
     100%{
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
     
 }
@@ -398,12 +440,26 @@ hr{
     text-decoration: underline;
 }
 .third-section-moving-cards{
+    width: 100%;
     padding: 50px 30px;
     display: flex;
     gap: 2em;
+    animation: movingcards 7s linear infinite;
+}
+.third-section-moving-cards:hover{
+    animation-play-state: paused;
+}
+.moving-customers{
+    overflow: hidden;
 }
 @keyframes movingcards {
-    
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+
 }
 .cards{
     text-align: left;
@@ -411,6 +467,7 @@ hr{
     background-size: cover;
     background-position: center;
     border-radius: 20px;
+    flex-shrink: 0;
     height: 500px;
     width: 330px;
     color: white;
@@ -467,6 +524,9 @@ hr{
 }
 .card3{
     background-image: url(./images/kyle-campbell.jpg);
+}
+.card5{
+    background-image: url(./images/richard-li..jpg);
 }
 .card4{
     padding: 20px 40px;
@@ -681,9 +741,7 @@ nav .fa-bars{
     .nav-links, .banner ul{
         display: none;
     }
-     .third-section{
-    display: none;
-   }
+     
    .fourth-section-lr{
         gap: 4em;
         padding-left: 50px;
@@ -737,7 +795,10 @@ nav .fa-bars{
     .hero video{
         width: 650px;
     }
-
+    .cards{ 
+        height: 500px;
+        width: 280px;
+    }
 }
 @media (max-width: 700px) {
     .signup, .login{
@@ -817,6 +878,10 @@ nav .fa-bars{
 
 }
 @media (max-width: 429px) {
+     .cards{ 
+        height: 500px;
+        width: 250px;
+    }
     nav{
         padding: 0px 20px;
     }
