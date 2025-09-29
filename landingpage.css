@@ -695,6 +695,9 @@ nav .fa-bars{
 .accordion{
     display: none;
 }
+.accordion-body ul li a{
+    color: #515254;
+}
 .mobile-logo{
     display: none;
 }
