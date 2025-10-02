@@ -236,6 +236,12 @@ p{
     
 }
 @media (max-width: 660px) {
+        .mobile-logo{
+        display: inline;
+        visibility: visible;
+        /* margin-left: -260px; */
+        width: 80px;
+    }
     .hosting h1{
         font-size: 1em;
         /* padding: 8px; */
@@ -253,8 +259,6 @@ p{
     }
     .mobile-logo{
         display: inline;
-        visibility: visible;
-        margin-left: -260px;
         width: 80px;
     }
     .hero{
@@ -293,7 +297,7 @@ p{
         font-weight: 400;
     }
    .mobile-logo{
-        margin-left: -160px;
+        /* margin-left: -160px; */
         width: 60px;
    } 
    .cloudways{
